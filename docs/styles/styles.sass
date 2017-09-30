@@ -1,0 +1,229 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  outline: none
+
+html
+  font-size: 15px
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+  background-color: white
+
+.container
+  width: 80%
+  margin: 0 auto
+
+li
+  list-style-type: none
+
+a
+  text-decoration: none
+  color: inherit
+
+.flex
+  display: flex
+  flex-flow: column wrap
+
+.flex-row
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  height: 100%
+  align-items: center
+
+.contact-short
+  height: 3rem
+  background-color: #2e336d
+  color: white
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-end
+  align-items: center
+  a:last-of-type
+    margin-right: 10%
+    margin-left: 3rem
+ 
+header.main
+  height: 25vh
+  color: #131748
+  display: flex
+  flex-flow: column nowrap
+  justify-content: space-between
+  .container .flex-row
+    height: 100%
+  .brand
+    width: 30%
+    img
+      width: 100%
+  .goods-list
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    li
+      flex-grow: 5
+      text-align: center
+      padding: 0.7rem
+
+.cta
+  height: 75vh
+  background: url('../assets/images/audi-tts-interior-salon-rul.jpg') no-repeat 10% 70%
+  position: relative
+  background-size: cover
+  border-top: 4px solid orange
+  .cta-button-container
+    position: absolute
+    top: 75%
+    left: 50%
+    transform: translate(-50%, -75%)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .wrapper
+      display: flex
+      justify-content: center
+    h2
+      font-size: 2rem
+      color: white
+      text-shadow: 0 0 5px black
+      margin-bottom: 2rem
+    button
+      font-size: 1.7rem
+      text-align: center
+      background: rgba(255, 255, 255, 0.6)
+      flex: 1 2 50%
+      align-items: end
+      font-size: 1.4rem
+      padding: 0.7rem 0.3rem
+      &.left
+        border: 1px solid white
+        border-radius: 5px 0 0 5px
+      &.right
+        border: 2px solid orange
+        border-radius: 0 5px 5px 0
+
+h2
+  font-size: 2rem
+  color: #131748
+  padding: 6rem 0 4rem 3rem
+
+p
+  line-height: 1.5rem
+  color: #2e336d
+
+.brands
+  li
+    flex: 1 1 3rem
+    img
+      width: 100%
+
+.flex-row-no-wrap
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  height: 100%
+  align-items: center
+  .flex
+    width: 60%
+
+.goods
+  position: relative
+  h3
+    font-size: 1.5rem
+    padding: 14% 0 6% 0
+  .goods-nav
+    color: rgba(255, 255, 255, 0.6)
+    position: relative
+    float: left
+    width: 30%
+    padding-left: 10%
+    padding-bottom: 2%
+    background-color: #2e336d
+    h3
+      color: rgba(255, 255, 255, 0.81)
+
+    li
+      font-size: 1.2rem
+      padding: 3% 0
+    li::after
+      height: 1px
+      background: white
+      content: ''
+      width: 100%
+      position: absolute
+      left: 0
+      transform: translateY(-0.5rem)
+
+  .goods-category
+    width: 70%
+    float: left
+    padding: 3% 10% 0 5%
+    border-top: 4px solid orange
+    
+
+
+
+.descr
+  align-self: flex-start
+  margin-right: 4%
+  color: #2e336d
+  h3
+    padding-top: 0
+  p
+    padding-bottom: 7%
+
+.map-comment
+  flex: 1 5 30%
+  margin-right: 3rem
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  height: 100%
+
+.map
+  flex: 1 1 0
+
+.location
+  .flex-row
+    align-items: flex-start
+
+.contactform-container
+  .shop-info
+    background: #2e336d
+    color: white
+    padding: 1.7rem
+    text-align: center
+    p
+      color: white
+    h3
+      margin-bottom: 1.5rem
+      .brand
+        font-size: 1.7rem
+        span
+          color: #fecb01
+  form
+    background-color: #e9e9ff
+    padding: 1.7rem
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 2rem
+    label, input, textarea
+      display: block
+    input, textarea
+      width: 100%
+      padding: 1.2rem
+      margin-top: 1.4rem
+    .full
+      grid-column: 1 / 3
+    input[type="submit"]
+      background-color: #9ec1d2
+      border: 0
+      margin-top: 0
+      text-transform: uppercase
+     
+
+
+.about-us
+  margin-bottom: 7rem
+
+.contact-info
+  clear: both

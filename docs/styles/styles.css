@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; }
+
+html {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap; }
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.contact-short {
+  height: 3rem;
+  background-color: #2e336d;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .contact-short a:last-of-type {
+    margin-right: 10%;
+    margin-left: 3rem; }
+
+header.main {
+  height: 25vh;
+  color: #131748;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  header.main .container .flex-row {
+    height: 100%; }
+  header.main .brand {
+    width: 30%; }
+    header.main .brand img {
+      width: 100%; }
+  header.main .goods-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    header.main .goods-list li {
+      -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+      flex-grow: 5;
+      text-align: center;
+      padding: 0.7rem; }
+
+.cta {
+  height: 75vh;
+  background: url("../assets/images/audi-tts-interior-salon-rul.jpg") no-repeat 10% 70%;
+  position: relative;
+  background-size: cover;
+  border-top: 4px solid orange; }
+  .cta .cta-button-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -75%);
+    -ms-transform: translate(-50%, -75%);
+    transform: translate(-50%, -75%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .cta .cta-button-container .wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .cta .cta-button-container h2 {
+      font-size: 2rem;
+      color: white;
+      text-shadow: 0 0 5px black;
+      margin-bottom: 2rem; }
+    .cta .cta-button-container button {
+      font-size: 1.7rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.6);
+      -webkit-box-flex: 1;
+      -ms-flex: 1 2 50%;
+      flex: 1 2 50%;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: end;
+      font-size: 1.4rem;
+      padding: 0.7rem 0.3rem; }
+      .cta .cta-button-container button.left {
+        border: 1px solid white;
+        border-radius: 5px 0 0 5px; }
+      .cta .cta-button-container button.right {
+        border: 2px solid orange;
+        border-radius: 0 5px 5px 0; }
+
+h2 {
+  font-size: 2rem;
+  color: #131748;
+  padding: 6rem 0 4rem 3rem; }
+
+p {
+  line-height: 1.5rem;
+  color: #2e336d; }
+
+.brands li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 3rem;
+  flex: 1 1 3rem; }
+  .brands li img {
+    width: 100%; }
+
+.flex-row-no-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .flex-row-no-wrap .flex {
+    width: 60%; }
+
+.goods {
+  position: relative; }
+  .goods h3 {
+    font-size: 1.5rem;
+    padding: 14% 0 6% 0; }
+  .goods .goods-nav {
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    float: left;
+    width: 30%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    background-color: #2e336d; }
+    .goods .goods-nav h3 {
+      color: rgba(255, 255, 255, 0.81); }
+    .goods .goods-nav li {
+      font-size: 1.2rem;
+      padding: 3% 0; }
+    .goods .goods-nav li::after {
+      height: 1px;
+      background: white;
+      content: '';
+      width: 100%;
+      position: absolute;
+      left: 0;
+      -webkit-transform: translateY(-0.5rem);
+      -ms-transform: translateY(-0.5rem);
+      transform: translateY(-0.5rem); }
+  .goods .goods-category {
+    width: 70%;
+    float: left;
+    padding: 3% 10% 0 5%;
+    border-top: 4px solid orange; }
+
+.descr {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-right: 4%;
+  color: #2e336d; }
+  .descr h3 {
+    padding-top: 0; }
+  .descr p {
+    padding-bottom: 7%; }
+
+.map-comment {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 5 30%;
+  flex: 1 5 30%;
+  margin-right: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 100%; }
+
+.map {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0; }
+
+.location .flex-row {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.contactform-container .shop-info {
+  background: #2e336d;
+  color: white;
+  padding: 1.7rem;
+  text-align: center; }
+  .contactform-container .shop-info p {
+    color: white; }
+  .contactform-container .shop-info h3 {
+    margin-bottom: 1.5rem; }
+    .contactform-container .shop-info h3 .brand {
+      font-size: 1.7rem; }
+      .contactform-container .shop-info h3 .brand span {
+        color: #fecb01; }
+
+.contactform-container form {
+  background-color: #e9e9ff;
+  padding: 1.7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem; }
+  .contactform-container form label, .contactform-container form input, .contactform-container form textarea {
+    display: block; }
+  .contactform-container form input, .contactform-container form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    margin-top: 1.4rem; }
+  .contactform-container form .full {
+    grid-column: 1 / 3; }
+  .contactform-container form input[type="submit"] {
+    background-color: #9ec1d2;
+    border: 0;
+    margin-top: 0;
+    text-transform: uppercase; }
+
+.about-us {
+  margin-bottom: 7rem; }
+
+.contact-info {
+  clear: both; }
