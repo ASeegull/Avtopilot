@@ -356,6 +356,9 @@ button {
   .order:active {
     border: 2px solid #c75d0a; }
 
+#categoryItem {
+  width: 298px; }
+
 .ask {
   position: relative;
   clear: both;
