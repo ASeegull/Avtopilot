@@ -1,0 +1,34 @@
+.contact-info
+  clear: both
+  margin-top: 2rem
+
+.location
+  .flex-row
+    align-items: flex-start
+
+.map-comment
+  flex: 1 5 30%
+  margin-right: 3rem
+  +flex(column, nowrap)
+  +justify(space-around)
+  height: 100%
+
+.map
+  flex: 1 1 0
+  iframe
+    min-height: 300px
+    height: 60vh 
+    min-width: 500px
+    margin: 6rem 0
+
+.pvd /* link to Pivdennuy web-site */
+  border-top: 2px $fancyBorder
+  color: #8e1817
+  margin-top: 1rem
+  &:hover
+    color: #dc7729
+
+.fa-map-marker
+  color: #da200e
+    
+

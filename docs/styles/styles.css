@@ -7,7 +7,7 @@
 
 html {
   font-size: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
   background-color: white; }
 
 .container {
@@ -17,9 +17,25 @@ html {
 li {
   list-style-type: none; }
 
+h2 {
+  font-size: 2rem;
+  color: #131748;
+  padding: 6rem 0 4rem 0; }
+
+p {
+  line-height: 2.5rem;
+  color: #2e336d;
+  font-size: 1.2rem; }
+
+.fa {
+  font-size: 1.6rem;
+  margin-right: 0.7rem; }
+
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  width: 100%;
+  display: inline-block; }
 
 .flex {
   display: -webkit-box;
@@ -27,8 +43,10 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap; }
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .flex-row {
   display: -webkit-box;
@@ -36,8 +54,10 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -45,6 +65,26 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.flex-row-no-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .flex-row-no-wrap .flex {
+    width: 60%; }
 
 .contact-short {
   height: 3rem;
@@ -55,14 +95,18 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .contact-short a {
+    width: auto; }
   .contact-short a:last-of-type {
     margin-right: 10%;
     margin-left: 3rem; }
@@ -75,8 +119,8 @@ header.main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
@@ -85,146 +129,203 @@ header.main {
   header.main .brand {
     width: 30%; }
     header.main .brand img {
-      width: 100%; }
-  header.main .goods-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    header.main .goods-list li {
-      -webkit-box-flex: 5;
-      -ms-flex-positive: 5;
-      flex-grow: 5;
-      text-align: center;
-      padding: 0.7rem; }
+      width: 100%;
+      background-color: #2e336d; }
 
-.cta {
-  height: 75vh;
-  background: url("../assets/images/audi-tts-interior-salon-rul.jpg") no-repeat 10% 70%;
-  position: relative;
-  background-size: cover;
-  border-top: 4px solid orange; }
-  .cta .cta-button-container {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -75%);
-    -ms-transform: translate(-50%, -75%);
-    transform: translate(-50%, -75%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .cta .cta-button-container .wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-    .cta .cta-button-container h2 {
-      font-size: 2rem;
-      color: white;
-      text-shadow: 0 0 5px black;
-      margin-bottom: 2rem; }
-    .cta .cta-button-container button {
-      font-size: 1.7rem;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.6);
-      -webkit-box-flex: 1;
-      -ms-flex: 1 2 50%;
-      flex: 1 2 50%;
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      align-items: end;
-      font-size: 1.4rem;
-      padding: 0.7rem 0.3rem; }
-      .cta .cta-button-container button.left {
-        border: 1px solid white;
-        border-radius: 5px 0 0 5px; }
-      .cta .cta-button-container button.right {
-        border: 2px solid orange;
-        border-radius: 0 5px 5px 0; }
-
-h2 {
-  font-size: 2rem;
-  color: #131748;
-  padding: 6rem 0 4rem 3rem; }
-
-p {
-  line-height: 1.5rem;
-  color: #2e336d; }
-
-.brands li {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 3rem;
-  flex: 1 1 3rem; }
-  .brands li img {
-    width: 100%; }
-
-.flex-row-no-wrap {
+.goods-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 100%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .flex-row-no-wrap .flex {
-    width: 60%; }
+  justify-content: space-between; }
+  .goods-list li {
+    -webkit-box-flex: 5;
+    -ms-flex-positive: 5;
+    flex-grow: 5;
+    text-align: center;
+    padding: 0.7rem; }
 
-.goods {
-  position: relative; }
-  .goods h3 {
-    font-size: 1.5rem;
-    padding: 14% 0 6% 0; }
-  .goods .goods-nav {
-    color: rgba(255, 255, 255, 0.6);
-    position: relative;
-    float: left;
-    width: 30%;
-    padding-left: 10%;
-    padding-bottom: 2%;
-    background-color: #2e336d; }
-    .goods .goods-nav h3 {
-      color: rgba(255, 255, 255, 0.81); }
-    .goods .goods-nav li {
-      font-size: 1.2rem;
-      padding: 3% 0; }
-    .goods .goods-nav li::after {
-      height: 1px;
-      background: white;
-      content: '';
-      width: 100%;
-      position: absolute;
-      left: 0;
-      -webkit-transform: translateY(-0.5rem);
-      -ms-transform: translateY(-0.5rem);
-      transform: translateY(-0.5rem); }
-  .goods .goods-category {
-    width: 70%;
-    float: left;
-    padding: 3% 10% 0 5%;
-    border-top: 4px solid orange; }
+.main li {
+  position: relative;
+  color: #2e336d;
+  font-weight: bold; }
+
+.main h3 {
+  padding-left: 0.7rem; }
+
+.main li:hover {
+  color: #131748; }
+
+.main li:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #131748;
+  opacity: 0;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+.main li:hover:before {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1); }
+
+/* parallax */
+.cta {
+  position: relative;
+  height: 75vh;
+  background: url("../assets/images/audi-tts-interior-salon-rul.jpg") no-repeat 10% 70%;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 0px -2px 95px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -2px 95px 0px rgba(0, 0, 0, 0.75);
+  border-top: 4px solid orange; }
+
+.cta-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -75%);
+  -ms-transform: translate(-50%, -75%);
+  transform: translate(-50%, -75%); }
+  .cta-button-container h2 {
+    color: white;
+    padding: 3rem; }
+  .cta-button-container .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .cta-button-container .wrapper h2 {
+      font-size: 2rem;
+      color: white;
+      text-shadow: 0 0 5px black; }
+
+button {
+  color: #131748;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-box-flex: 1;
+  -ms-flex: 1 2 50%;
+  flex: 1 2 50%;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: 0.7rem 0.3rem; }
+  button.left {
+    border: 2px solid white;
+    border-radius: 5px 0 0 5px; }
+    button.left:hover {
+      background-color: white; }
+  button.right {
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 0 5px 5px 0; }
+    button.right:hover {
+      -webkit-box-shadow: inset 0 0 10px 0 #c75d0a;
+      box-shadow: inset 0 0 10px 0 #c75d0a;
+      border: 2px solid #dc7729; }
+    button.right:active {
+      border: 2px solid #c75d0a; }
+
+.about-us {
+  margin-bottom: 7rem; }
+  .about-us header {
+    text-align: center; }
+
+.fancy span {
+  position: relative;
+  display: inline-block; }
+
+.fancy span:before, .fancy span:after {
+  content: '';
+  position: absolute;
+  width: 335%;
+  height: 5px;
+  border-bottom: 4px solid orange; }
+
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px; }
+
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px; }
+
+.goods h3 {
+  font-size: 1.5rem;
+  padding: 14% 0 6% 0; }
+
+.goods .goods-nav {
+  position: relative;
+  float: left;
+  width: 30%;
+  padding-left: 10%;
+  padding-bottom: 2%;
+  margin-bottom: 8rem;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2e336d; }
+  .goods .goods-nav h3 {
+    color: rgba(255, 255, 255, 0.81); }
+  .goods .goods-nav li {
+    font-size: 1.2rem;
+    padding: 3% 0; }
+  .goods .goods-nav li::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    -webkit-transform: translateY(-0.5rem);
+    -ms-transform: translateY(-0.5rem);
+    transform: translateY(-0.5rem); }
+  .goods .goods-nav a:hover {
+    color: white;
+    font-weight: bold; }
+
+.goods-category {
+  float: left;
+  width: 70%;
+  margin-bottom: 3.5rem;
+  padding: 3% 10% 0 5%;
+  border-top: 4px solid orange; }
 
 .descr {
   -ms-flex-item-align: start;
@@ -235,6 +336,89 @@ p {
     padding-top: 0; }
   .descr p {
     padding-bottom: 7%; }
+
+.order {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem 3.5rem;
+  background-color: orange;
+  color: #131748;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid orange;
+  border-radius: 3px; }
+  .order:hover {
+    -webkit-box-shadow: inset 0 0 15px 0 #c75d0a;
+    box-shadow: inset 0 0 15px 0 #c75d0a;
+    border: 2px solid #dc7729; }
+  .order:active {
+    border: 2px solid #c75d0a; }
+
+.ask {
+  position: relative;
+  clear: both;
+  height: 35vh;
+  background: url(../assets/images/jd-weiher-144459.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 0px -2px 95px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -2px 95px 0px rgba(0, 0, 0, 0.75); }
+  .ask h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 10vh;
+    text-shadow: 0 0 10px black;
+    padding-bottom: 1.5rem; }
+  .ask form.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .ask form.container input {
+      border: 2px solid orange;
+      border-radius: 3px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 0.7rem 2rem;
+      font-weight: bold;
+      color: #131748;
+      font-size: 1.1rem; }
+      .ask form.container input::-webkit-input-placeholder {
+        color: #131748; }
+      .ask form.container input:-ms-input-placeholder {
+        color: #131748; }
+      .ask form.container input::placeholder {
+        color: #131748; }
+      .ask form.container input:focus {
+        background: rgba(255, 255, 255, 0.77); }
+      .ask form.container input[type="submit"] {
+        background-color: orange;
+        text-transform: uppercase; }
+        .ask form.container input[type="submit"]:hover {
+          -webkit-box-shadow: inset 0 0 15px 0 #c75d0a;
+          box-shadow: inset 0 0 15px 0 #c75d0a;
+          border: 2px solid #dc7729; }
+        .ask form.container input[type="submit"]:active {
+          border: 2px solid #c75d0a; }
+
+.contact-info {
+  clear: both;
+  margin-top: 2rem; }
+
+.location .flex-row {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
 
 .map-comment {
   -webkit-box-flex: 1;
@@ -248,6 +432,8 @@ p {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   height: 100%; }
@@ -256,11 +442,21 @@ p {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 0px;
   flex: 1 1 0; }
+  .map iframe {
+    min-height: 300px;
+    height: 60vh;
+    min-width: 500px;
+    margin: 6rem 0; }
 
-.location .flex-row {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start; }
+.pvd {
+  border-top: 2px solid orange;
+  color: #8e1817;
+  margin-top: 1rem; }
+  .pvd:hover {
+    color: #dc7729; }
+
+.fa-map-marker {
+  color: #da200e; }
 
 .contactform-container .shop-info {
   background: #2e336d;
@@ -286,7 +482,7 @@ p {
     display: block; }
   .contactform-container form input, .contactform-container form textarea {
     width: 100%;
-    padding: 1.2rem;
+    padding: 0.7rem;
     margin-top: 1.4rem; }
   .contactform-container form .full {
     grid-column: 1 / 3; }
@@ -295,9 +491,11 @@ p {
     border: 0;
     margin-top: 0;
     text-transform: uppercase; }
+    .contactform-container form input[type="submit"]:hover {
+      background-color: red; }
 
-.about-us {
-  margin-bottom: 7rem; }
-
-.contact-info {
-  clear: both; }
+footer {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #2e336d; }

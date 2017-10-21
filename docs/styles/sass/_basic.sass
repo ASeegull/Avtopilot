@@ -1,0 +1,58 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  outline: none
+
+
+html
+  font-size: 15px
+  font-family: Verdana, Tahoma, sans-serif
+  background-color: white
+
+.container
+  width: 80%
+  margin: 0 auto
+
+li
+  list-style-type: none
+
+
+h2
+  font-size: 2rem
+  color: $accentedText
+  padding: 6rem 0 4rem 0
+
+p
+  line-height: 2.5rem
+  color: $regularText
+  font-size: 1.2rem
+
+
+.fa
+  font-size: 1.6rem
+  margin-right: 0.7rem
+
+a
+  text-decoration: none
+  color: inherit
+  width: 100%
+  display: inline-block
+
+.flex
+  +flex(column, wrap)
+
+
+.flex-row
+  +flex(row, wrap)
+  +justify(space-between)
+  height: 100%
+  align-items: center
+
+.flex-row-no-wrap
+  +flex(row, nowrap)
+  +justify(space-between)
+  height: 100%
+  align-items: center
+  .flex
+    width: 60%

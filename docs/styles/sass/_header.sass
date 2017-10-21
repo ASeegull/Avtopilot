@@ -1,0 +1,62 @@
+.contact-short
+  height: 3rem
+  background-color: $regularText
+  color: $accentColor
+  +flex(row, wrap)
+  +justify(flex-end)
+  align-items: center
+  a
+    width: auto
+  a:last-of-type  /* adds margin to the last li to fit container */
+    margin-right: 10%
+    margin-left: 3rem
+
+
+
+header.main
+  height: 25vh
+  color: $accentedText
+  +flex--space-btw(column)
+  .container .flex-row
+    height: 100%
+  .brand
+    width: 30%
+    img
+      width: 100%
+      background-color: $regularText
+
+.goods-list
+  +flex--space-btw(row)
+  li
+    flex-grow: 5
+    text-align: center
+    padding: 0.7rem
+
+
+.main 
+  li
+    position: relative
+    color: $regularText
+    font-weight: bold
+
+.main
+  h3
+    padding-left: 0.7rem
+
+.main li:hover 
+  color: $accentedText
+
+.main li:before
+  +pseudo
+  width: 100%
+  height: 2px
+  bottom: 0
+  left: 0
+  background-color: $accentedText
+  opacity: 0
+  transform: scaleX(0)
+  transition: all 0.3s ease-in-out 0s
+
+.main li:hover:before
+  opacity: 1
+  transform: scaleX(1)

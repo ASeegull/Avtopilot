@@ -1,0 +1,57 @@
+/* parallax */
+.cta
+  position: relative
+  height: 75vh
+  background: url('../assets/images/audi-tts-interior-salon-rul.jpg') no-repeat 10% 70%
+  background-size: cover
+  background-attachment: fixed
+  +parallax-shadow()
+  border-top: 4px $fancyBorder
+  
+
+.cta-button-container
+  +flex(column, nowrap)
+  +justify(center)
+  position: absolute
+  top: 75%
+  left: 50%
+  transform: translate(-50%, -75%)  
+  h2
+    color: $accentColor
+    padding: 3rem
+  .wrapper
+    +flex(row, nowrap)
+    +justify(center)
+    h2
+      font-size: 2rem
+      color: $accentColor
+      text-shadow: 0 0 5px black
+
+
+button
+  color: $accentedText
+  text-align: center
+  text-transform: uppercase
+  font-weight: bold
+  font-size: 1.1rem
+  background-color: rgba(255, 255, 255, 0.6)
+  flex: 1 2 50%
+  align-items: flex-end
+  padding: 0.7rem 0.3rem
+   
+  &.left
+    border: 2px solid $accentColor
+    border-radius: 5px 0 0 5px
+    &:hover
+      background-color: $accentColor
+
+  &.right
+    border: 2px $fancyBorder
+    background-color: $fancyColor
+    border-radius: 0 5px 5px 0
+    &:hover
+      box-shadow: inset 0 0 10px 0 #c75d0a
+      border: 2px solid #dc7729
+    &:active
+      border: 2px solid #c75d0a
+        

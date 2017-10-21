@@ -1,142 +1,176 @@
 <!DOCTYPE html>
 <html lang="uk-UA">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Магазин Автопілот</title>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Магазин Автопілот</title>
+  <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
+
 <body>
-    <header class="main">
-      <div class="contact-short">
-        <a href="tel:+380679807401">+380679807401</a>
-        <a href="tel:+380970311733">+380970311733</a>
-      </div>
-      <div class="container flex-row">
-      <div class="brand"><h1><img src="./assets/images/avtopilot_logofull.png" alt="Автопілот"/></h1>
+  <!-- Header: Begin -->
+  <header class="main">
+    <div class="contact-short">
+      <i class="fa fa-mobile" aria-hidden="true"></i><a href="tel:+380679807401">+380679807401</a>;
+      <a href="tel:+380970311733">+380970311733</a>
+    </div>
+    <div class="container flex-row">
+      <div class="brand">
+        <h1><img src="./assets/images/avtopilot_logotransparent.png" alt="Автопілот"/></h1>
       </div>
       <div class="flex">
         <h3>Оригінальні автотовари</h3>
         <ul class="goods-list">
-          <li>Мастила |</li>
-          <li>Диски |</li>
-          <li>Чохли |</li>
-          <li>Килимки |</li>
-          <li>Автохімія |</li>
+          <li>Мастила</li>
+          <li>Диски</li>
+          <li>Чохли</li>
+          <li>Килимки</li>
+          <li>Автохімія</li>
           <li>Аксесуари</li>
         </ul>
       </div>
+    </div>
+  </header>
+  <!-- Header: End -->
+  <main>
+
+    <!-- CTA: Begin -->
+    <section class="cta">
+      <div class="cta-button-container">
+        <h2>Оригінальні автозапчастини</h2>
+        <div class="wrapper">
+          <button class="left">Запитати</button>
+          <button class="right">Замовити товар</button>
+        </div>
       </div>
-    </header>
-    <main>
-      <section class="cta">
-        <div class="cta-button-container">
-          <h2>Оригінальні автозапчастини</h2>
-          <div class="wrapper">
-            <button class="left">Запитати</button>
-            <button class="right">Замовити товар</button>
+    </section>
+    <!-- CTA: End -->
+
+    <!-- Information about shop: Begin -->
+    <article class="about-us">
+      <div class="container">
+        <header>
+          <h2 class="fancy"><span>Про нас</span></h2>
+        </header>
+        <p>В магазині Автопілот Ви вже більше 15 років можете купити оригінальні автотовари європейських виробників.
+        </p>
+        <p>Ми пропонуємо широкий асортимент чохлів, килимків, дисків, автохімії та аксесуарів.</p>
+        <p>Ви можете завітати до нас за адресою ТВК "Південний", Торгівельна лінія "Західна", Другий поверх, № 4-7.
+        </p>
+        <p>Крім того, Ви можете придбати у нас товари за замовленням.</p>
+
+        <p>Заповніть форму і ми швидко зв'яжемось з Вами і надамо необхідну інформацію про Ваше замовлення</p>
+        <p>Ваші дані повністю захищені, на Вашу почту та номер мобільного не буде приходити зайва реклама.</p>
+      </div>
+    </article>
+    <!-- Information about shop: End -->
+
+    <!-- Goods categories: Begin -->
+    <section class="goods">
+      <div class="goods-nav">
+        <h3>Ми пропонуємо:</h3>
+        <ul>
+          <li><a href="#">Мастила</a></li>
+          <li><a href="#">Диски</a></li>
+          <li><a href="#">Акумулятори</a></li>
+          <li><a href="#">Автозапчастини</a></li>
+          <li><a href="#">Автохімія</a></li>
+          <li><a href="#">Аксесуари</a></li>
+          <li><a href="#">Багажники</a></li>
+          <li><a href="#">Фарба</a></li>
+          <li><a href="#">Чохли</a></li>
+          <li><a href="#">Фільтри</a></li>
+          <li><a href="#">Лампи</a></li>
+        </ul>
+      </div>
+      <div class="goods-category flex-row-no-wrap">
+        <div class="flex descr">
+          <h3>Мастила</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus beatae, modi a quis, dignissimos sequi nobis qui dolorum optio, error ducimus iste eaque amet saepe hic suscipit officia quisquam molestias?</p>
+          <ul class="brands flex-row">
+            <li><img src="./assets/images/1.jpg" alt="logo"></li>
+            <li><img src="./assets/images/6.jpg" alt="logo"></li>
+            <li><img src="./assets/images/33.jpg" alt="logo"></li>
+            <li><img src="./assets/images/83.jpg" alt="logo"></li>
+          </ul>
+        </div>
+        <img src="./assets/images/10038381-82_970_DET01_15_INET.JPG" alt="logo">
+      </div>
+      <button class="order">Замовити товар</button>
+    </section>
+    <!-- Goods categories: End -->
+
+    <!-- Call form: Begin -->
+    <section class="ask">
+      <header>
+        <h3>Є питання? Залиште Ваш номер, і ми перетелефонуємо</h3>
+      </header>
+      <form class="container">
+        <input type="text" placeholder="Ваше ім'я" />
+        <input type="text" placeholder="Номер телефону" />
+        <input type="submit" value="Передзвоніть мені" />
+      </form>
+    </section>
+    <!-- Call form: End -->
+
+    <!-- How to find us: Begin -->
+    <section class="contact-info">
+      <div class="location">
+        <div class="container">
+          <div class="flex-row">
+
+            <div class="map-comment">
+              <h2>Як нас знайти?</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quibusdam officiis eveniet expedita rem libero placeat ullam voluptate qui veritatis voluptates, nisi ducimus distinctio atque. Quidem assumenda dignissimos sit ipsa!
+                <p class="pvd"><a target="_blank" href="http://www.pivdennij.com/mahazyn/index/index/shop/1134/"><span class="fa fa-map-marker"></span>ТВК "Південний", Торгівельна лінія "Західна", Другий поверх, № 4-7</a></p>
+              </p>
+            </div>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1287.363444475312!2d23.9713202!3d49.810002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5bc57af3e31f46c!2z0LzQsNCz0LDQt9C40L0g0KLQtdGA0LzQvtGO0L3RltC-0L0gOdC9!5e0!3m2!1sru!2sua!4v1506250295217"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
           </div>
         </div>
-      </section>
-        <article class="about-us">
-          <div class="container">
-          <header>
-            <h2>Про нас</h2>
-          </header>
-<p>В магазині Автопілот Ви вже більше 15 років можете купити 
-  оригінальні автотовари європейських виробників. 
-  Ми пропонуємо широкий асортимент чохлів, килимків, дисків, автохімії та аксесуарів.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Non pariatur rem et modi amet maxime officia ad, quam dicta 
-  ut architecto ullam minus iure, voluptatibus quisquam labore velit, itaque voluptate.
-</p>
-</div>        
-</article>
-        <section class="goods">
-
-            <div class="goods-nav">
-              <h3>Ми пропонуємо:</h3>
-              <ul>
-                <li><a href="#">Мастила</a></li>
-                <li><a href="#">Диски</a></li>
-                <li><a href="#">Акумулятори</a></li>
-                <li><a href="#">Автозапчастини</a></li>
-                <li><a href="#">Автохімія</a></li>
-                <li><a href="#">Чохли</a></li>
-              </ul>
-            </div>
-            <div class="goods-category flex-row-no-wrap">
-            <div class="flex descr">
-              <h3>Мастила</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus beatae, modi a quis, dignissimos 
-             sequi nobis qui dolorum optio, error ducimus iste eaque amet saepe hic suscipit officia 
-             quisquam molestias?</p>
-            <ul class="brands flex-row">
-              <li><img src="./assets/images/2652fde03f015c6704fca79ec0ab4bac.png" alt="logo"></li>
-              <li><img src="./assets/images/castrol_0.png" alt="logo"></li>
-              <li><img src="./assets/images/Logo.png" alt="logo"></li>
-              <li><img src="./assets/images/mobil-logo.png" alt="logo"></li>
-            </ul>
-          </div>
-            <img src="./assets/images/10038381-82_970_DET01_15_INET.JPG" alt="logo">
-          </div>
-        </section>
-        <section class="contact-info">
-         <div class="container contactform-container">
+      </div>
+      <!-- <div class="container contactform-container">
            <div class="shop-info">
            <h3>Магазин <span class="brand"><span>авто</span>пілот</span></h3>
-           <p>Ми швидко зв'яжемось з Вами і надамо необхідну інформацію про Ваше замовлення</p>
-           <p>Ваші дані повністю захищені, на Вашу почту та номер мобільного не буде приходити реклама від нас</p>
-           <a href="tel:+380679807401">+380679807401</a>
-           <a href="tel:+380970311733">+380970311733</a>
+           
            <p>ТВК "Південний", Торгівельна лінія "Західна", Другий поверх, № 4-7</p>
           </div>
+          <div class="container">
             <form id="purchaseForm" method="POST" action="send">
                 <label>Як до Вас звертатись?
-                <input type="text" name="name" placeholder="Петро Петрович" />
+                <input type="text" name="name" placeholder="Петро" />
                 </label>
-                <label>Напишіть, будь ласка, Ваш номер мобільного, щоб ми перетелефонували Вам
+                <label>
                 <input type="text" name="phone" placeholder="0936023283" required />
               </label>
-                <label>І адресу почтової скриньки, для надійності ;)
-                <input type="email" name="email" placeholder="a.chaikalemberg@gmail.com" />
-              </label>
-              <label>VIN-код машини необхідний, щоб правильно підібрати запчастини та аксесуари для Вашого авто
-                  <input type="text" name="vin" placeholder="a.chaikalemberg@gmail.com" />
-                </label>
+            
+  
+                  <input type="text" name="vin" placeholder="VIN-код машини" />
+  
                 <label class="full">Що Ви шукаєте?
                 <textarea  name="item" placeholder="Диски для ..." rows="5"></textarea>
               </label>
                 
                 <input class="full" type="submit" value="Відправити" />
             </form>
-        </div>
-        <div class="location">
-            <div class="container">
-          <div class="flex-row">
-              
-          <div class="map-comment">
-              <h2>Як нас знайти?</h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quibusdam officiis eveniet expedita 
-            rem libero placeat ullam voluptate qui veritatis voluptates, nisi ducimus distinctio atque. 
-            Quidem assumenda dignissimos sit ipsa!
-          </p> 
           </div>
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1287.363444475312!2d23.9713202!3d49.810002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5bc57af3e31f46c!2z0LzQsNCz0LDQt9C40L0g0KLQtdGA0LzQvtGO0L3RltC-0L0gOdC9!5e0!3m2!1sru!2sua!4v1506250295217" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> 
-    
-          </div>
-        </div>
-      </div>
-        </div>
-        </section>
+        </div> -->
+
+    </section>
     <footer>
-        <div class="container">
-<h6>Львів, 2017</h6>
-        </div>
+      <div class="container">
+        <h6>Львів, 2017</h6>
+      </div>
     </footer>
-    </main>
-    <!-- <script src=""></script> -->
+  </main>
+  <!-- <script src=""></script> -->
 </body>
+
 </html>

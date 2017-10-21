@@ -1,0 +1,39 @@
+.ask
+  position: relative
+  clear: both
+  height: 35vh
+  background: url(../assets/images/jd-weiher-144459.jpg) no-repeat center center
+  background-size: cover
+  background-attachment: fixed
+  +parallax-shadow()
+  h3
+    color: $accentColor
+    text-align: center
+    font-size: 1.5rem
+    padding-top: 10vh
+    text-shadow: 0 0 10px black
+    padding-bottom: 1.5rem
+  form.container
+    +flex(row, wrap)
+    +justify(space-around)
+    input
+      border: 2px $fancyBorder
+      border-radius: 3px
+      text-align: center
+      background: rgba(255, 255, 255, 0.3)
+      padding: 0.7rem 2rem
+      font-weight: bold
+      color: $accentedText
+      font-size: 1.1rem
+      &::placeholder
+        color: $accentedText
+      &:focus
+        background: rgba(255, 255, 255, 0.77)  
+      &[type="submit"]
+        background-color: $fancyColor
+        text-transform: uppercase
+        &:hover
+          box-shadow: inset 0 0 15px 0 #c75d0a
+          border: 2px solid #dc7729
+        &:active
+          border: 2px solid #c75d0a
